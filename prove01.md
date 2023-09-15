@@ -5,11 +5,11 @@ file completed or uncompleted in a public file sharing site.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
-**Name**: 
+**Name**: Ammon Edwards
 
-**Section**:
+**Section**: two
 
-**Teacher**:
+**Teacher**: Brother Macbeth 
 
 ## Question 1 (5 points)
 
@@ -19,11 +19,11 @@ Identify (with an "X") whether each statement is either a proposition or non-pro
 |:-:|:-:|:-:|
 |I got an A in CSE 280|X||
 |Hello!||X|
-|The hose has a leak.|||
-|The wind speed is greater than 30 miles per hour.|||
-|Close the window.|||
-|The window is closed.|||
-|Are you graduating this semester?|||
+|The hose has a leak.|x||
+|The wind speed is greater than 30 miles per hour.|x||
+|Close the window.||x|
+|The window is closed.|x||
+|Are you graduating this semester?||x|
 
 ## Question 2 (28 points)
 
@@ -42,54 +42,54 @@ Complete the following truth tables (the first one is done for you):
 
 |$p$|$q$|$p \lor q$|
 |:-:|:-:|:-:|
-|T|T||
-|T|F||
-|F|T||
-|F|F||
+|T|T|T|
+|T|F|T|
+|F|T|T|
+|F|F|F|
 
 3. $\neg p \to q$
 
 |$p$|$q$|$\neg p$|$\neg p \to q$|
 |:-:|:-:|:-:|:-:|
-|T|T|||
-|T|F|||
-|F|T|||
-|F|F|||
+|T|T|F|T|
+|T|F|F|T|
+|F|T|T|T|
+|F|F|T|F|
 
 4. $p \land \neg q$
 
 |$p$|$q$|$\neg q$|$p \land \neg q$|
 |:-:|:-:|:-:|:-:|
-|T|T|||
-|T|F|||
-|F|T|||
-|F|F|||
+|T|T|F|F|
+|T|F|T|T|
+|F|T|F|F|
+|F|F|T|F|
 
 5. $p \land (q \lor \neg r)$
 
 |$p$|$q$|$r$|$\neg r$|$q \lor \neg r$|$p \land (q \lor \neg r)$|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|T|T|T||||
-|T|T|F||||
-|T|F|T||||
-|T|F|F||||
-|F|T|T||||
-|F|T|F||||
-|F|F|T||||
-|F|F|F||||
+|T|T|T|F|T|T|
+|T|T|F|T|T|T|
+|T|F|T|F|F|F|
+|T|F|F|T|T|T|
+|F|T|T|F|T|F|
+|F|T|F|T|T|F|
+|F|F|T|F|T|F|
+|F|F|F|T|T|F|
 
 6. $p \lor \neg (\neg q \land \neg r)$
 
 |$p$|$q$|$r$|$\neg q$|$\neg r$|$\neg q \land \neg r$|$\neg (\neg q \land \neg r)$|$p \lor \neg (\neg q \land \neg r)$|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|T|T|T||||||
-|T|T|F||||||
-|T|F|T||||||
-|T|F|F||||||
-|F|T|T||||||
-|F|T|F||||||
-|F|F|T||||||
-|F|F|F||||||
+|T|T|T|F|F|F|T|T|
+|T|T|F|F|T|F|T|T|
+|T|F|T|T|F|F|T|T|
+|T|F|F|T|T|T|F|T|
+|F|T|T|F|F|F|T|T|
+|F|T|F|F|T|F|T|T|
+|F|F|T|T|F|F|T|T|
+|F|F|F|T|T|T|F|F|
 
 ## Question 3 (12 points)
 
@@ -98,12 +98,13 @@ Determine if the following propositions written in English are True or False (th
 |Proposition|True or False|
 |-|-|
 |If $2+2=4$, then pigs can fly.|False|
-|If $2+7=5$, then Elvis is alive.||
-|If pigs can fly, then dogs can't fly.||
-|$2+1=3$ if and only if $1+2=3$.||
-|$1+2=3$ if and only if $3+1=6$.||
-|$1+3=2$ if and only if the earth is flat.||
-|$1 \lt 2$ if an only if $2 \lt 3$.||
+|If $2+7=5$, then Elvis is alive.|False|
+|If pigs can fly, then dogs can't fly.|True|
+|$2+1=3$ if and only if $1+2=3$.|True|
+|$1+2=3$ if and only if $3+1=6$.|False|
+|$1+3=2$ if and only if the earth is flat.|False|
+|$1 \lt 2$ if an only if $2 \lt 3$.|True|
+
 
 ## Question 4 (5 points)
 
@@ -119,9 +120,9 @@ There is another operator called exclusive or which uses the operator symbol $\o
 There is no built-in python function that implements exclusive or.  Implement the `xor` function below using the `and`, `or`, and `not` operators.  
 
 ```python
-def xor(p, q):
-    # Your code here
-    pass
+def xor(p, q): 
+    return (p or q) and not (p and q)
+    #I am suprized at how simple this was, very cool I like it. Took me way to long but I go there in the end. Mianly bcease I was trying way to hard to understand the fuction below. and thought I had to chage it in some way
 
 def truth_table_2_vars(function):
     print(f"{function.__name__}")
