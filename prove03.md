@@ -5,17 +5,17 @@ file completed or uncompleted in a public file sharing site.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
-**Name**:
+**Name**: Ammon Edwards
 
-**Section**:
+**Section**: 2
 
-**Teacher**:
+**Teacher**: Brother Macbeth
 
 ## Question 1 (5 points)
 
 Let $E$ be the set of even numbers, and let $P$ be the set of prime numbers.  Find all the values in the set formed by $E \cap P$.
 
-**Answer**:  
+**Answer**: 2
 
 ## Question 2 (5 points)
 
@@ -27,19 +27,19 @@ Let the following sets be given.  The Universal set for this problem is the set 
 
 Translate $(F \cap M) \subseteq C$ into an english sentance.
 
-**Answer**:
+**Answer**: Freshmen who are math minors and are CS Majors. 
 
 ## Question 3 (5 points)
 
 For each set described below, list 4 example values that would be in that set.  The first one is done for you.  Remember that $\mathbf{Z}$ represents integers and $\mathbf{Z}^+$ represents positive integers greater than 0.  
 
-|Set|Four Example Values in the Set|
+|Set|Four Example Values in the Set| 
 |:-:|:-:|
-|$\lbrace x \in \mathbf{Z}^+ \mid x-1 \text{ is a multiple of 7} \rbrace$||
-|$\lbrace x \mid x \text{ is a fruit and its skin is normally eaten} \rbrace$||
-|$\lbrace \frac 1 x \mid x \in \mathbf{Z}, x \neq 0 \rbrace$||
-|$\lbrace 2n \mid n \in \mathbf{Z}, n \lt 0 \rbrace$||
-|$\lbrace s \mid s = 1 + 2 + ... + n \text{ for some } n \in \mathbf{Z}^+ \rbrace$||
+|$\lbrace x \in \mathbf{Z}^+ \mid x-1 \text{ is a multiple of 7} \rbrace$|{8, 71, 15, 50} #Thie frist one was doen done for me lol.|
+|$\lbrace x \mid x \text{ is a fruit and its skin is normally eaten} \rbrace$|{apple, strawbarry, bluebarry, grape}|
+|$\lbrace \frac 1 x \mid x \in \mathbf{Z}, x \neq 0 \rbrace$|{1,2,3,4}|
+|$\lbrace 2n \mid n \in \mathbf{Z}, n \lt 0 \rbrace$|{-2,-4,-6,-8}|
+|$\lbrace s \mid s = 1 + 2 + ... + n \text{ for some } n \in \mathbf{Z}^+ \rbrace$|{1,3,6,10}|
 
 ## Question 4 (9 points)
 
@@ -48,15 +48,15 @@ Let $A = \lbrace 0, 2, 3 \rbrace$, $B = \lbrace 2, 3 \rbrace$, and $C = \lbrace 
 |Operation|Resulting Set|
 |:-:|:-:|
 |$A \cap B$|$\lbrace 2, 3 \rbrace$|
-|$A \cup B$||
-|$B \cup A$||
-|$A \cup C$||
-|$A - B$||
-|$B - A$||
-|$\overline{A}$||
-|$\overline{C}$||
-|$A \cap C$||
-|$A \oplus B$||
+|$A \cup B$|{0,2,3}|
+|$B \cup A$|{0,2,3}|
+|$A \cup C$|{0, 1, 2, 3, 5, 9}|
+|$A - B$|{0}|
+|$B - A$|{}|
+|$\overline{A}$|{1, 4, 5, 6, 7, 8, 9}|
+|$\overline{C}$|{0, 2, 3, 4, 6, 7, 8}|
+|$A \cap C$|{}|
+|$A \oplus B$|{0}|
 
 ## Question 5 (4 points)
 
@@ -65,10 +65,10 @@ Let $A=\lbrace 0, 2, 3 \rbrace$, $B=\lbrace 2, 3 \rbrace$, and $C=\lbrace 1, 4\r
 |Cartesian Product|Answer|
 |:-:|:-:|
 |$A \times B$|$\lbrace (0,2), (0,3), (2,2), (2,3), (3,2), (3,3) \rbrace$|
-|$B \times A$||
-|$A \times B \times C$||
-|$A \times \overline{A}$||
-|$B^2$||
+|$B \times A$|{(2,0),(2,2),(2,3),(3,0),(3,2),(3,3)}|
+|$A \times B \times C$| {(0, 2, 1), (0, 2, 4), (0, 3, 1), (0, 3, 4), (2, 2, 1), (2, 2, 4), (2, 3, 1), (2, 3, 4), (3, 2, 1), (3, 2, 4), (3, 3, 1), (3, 3, 4)}|
+|$A \times \overline{A}$|{(0, 1), (0, 4), (2, 1), (2, 4), (3, 1), (3, 4)}|
+|$B^2$|{(2, 2), (2, 3), (3, 2), (3, 3)}|
 
 ## Question 6 (5 points)
 
@@ -80,13 +80,13 @@ Which pairs (there may one pair or more than one pair) of the following sets are
 
 Hint: Make a list of numbers that are in each of these sets.
 
-**Answer**: 
+**Answer**: ({A,B},{B,C})
 
 ## Question 7 (5 points)
 
 List all of the partitions  (how many ways can we split according to the rules of partitions) of the set $A = \lbrace a, b, c \rbrace$.
 
-**Answer**: 
+**Answer**: ({a, b, c}, {b, c}, {a, c}, {b, c}, {a}, {b}, {c})
 
 ## Question 8 (12 points)
 
@@ -105,10 +105,14 @@ Use the starting code below to create set comprehensions as follows:
 
 
 ```python
-Set1 = None # Add Set Comprehension Code Here
-Set2 = None # Add Set Comprehension Code Here
-Set3 = None # Add Set Comprehension Code Here
-Set4 = None # Add Set Comprehension Code Here
+Set1 = {n for n in {2, 4, 8, 16}}
+
+Set2 = {n**2 for n in {-2, -1, 0, 1, 2}}
+
+Set3 = {n for n in range(1, 25) if 24 % n == 0}
+
+Set4 = {n for n in range(-10, 11) if n % 2 != 0}
+
 
 # Note that sets do not maintain order so it may vary
 print(Set1)
@@ -116,3 +120,4 @@ print(Set2)
 print(Set3)
 print(Set4)
 ```
+
